@@ -95,11 +95,7 @@ This macro implements an "outer union." The list of tables provided to this macr
 
 Usage:
 ```
-{{ macro union_tables(
-    tables=[ref('table_1', 'table_2')], 
-    column_override={"some_field": "varchar(100)"}, 
-    exclude=["some_other_field"]
-) }}
+{{ macro union_tables(tables=[ref('table_1', 'table_2')], column_override={"some_field": "varchar(100)"}) }}
 ```
 ---
 ### Web
